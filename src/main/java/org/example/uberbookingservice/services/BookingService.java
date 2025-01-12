@@ -7,6 +7,8 @@ import org.example.uberbookingservice.dto.createBookingResponseDto;
 import org.example.uberprojectentityservice.Models.Booking;
 
 public interface BookingService {
-    createBookingResponseDto createBooking(createBookingDto requestDto);
-    UpdateBookingResponseDto updateBooking(UpdateBookingRequestDto requestDto,Long id);
+
+    createBookingResponseDto createBooking(createBookingDto bookingDetails);
+
+    UpdateBookingResponseDto updateBooking(UpdateBookingRequestDto bookingRequestDto, Long bookingId);
 }

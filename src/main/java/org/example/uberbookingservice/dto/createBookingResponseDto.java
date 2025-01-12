@@ -9,10 +9,11 @@ import java.util.Optional;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class createBookingResponseDto {
-    private Long bookingId;
+    private long bookingId;
     private String bookingStatus;
     private Optional<Driver> driver;
+
 }

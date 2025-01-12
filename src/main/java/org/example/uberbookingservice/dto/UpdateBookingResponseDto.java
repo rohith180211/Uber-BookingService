@@ -10,10 +10,12 @@ import java.util.Optional;
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class UpdateBookingResponseDto  {
+@NoArgsConstructor
+public class UpdateBookingResponseDto {
+
      private Long bookingId;
      private BookingStatus status;
      private Optional<Driver> driver;
+
 }
